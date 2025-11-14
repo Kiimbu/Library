@@ -32,3 +32,8 @@ CREATE TABLE IF NOT EXISTS Loans(
     LoanStartDate DATE,
     LoanEndDate DATE
 );
+
+CREATE TABLE IF NOT EXISTS BookLoans(
+    LoanID INTEGER,
+    BookID INTEGER
+);
