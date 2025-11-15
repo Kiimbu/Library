@@ -44,4 +44,6 @@ def Show_Specific_Customer_Name(Firstname):
     for i in customer:
         print(i)
 
+def Show
+
 #Show_Specific_Customer(customerID = input("Geben sie die ID des Kunden ein: ")) # How to ouput a Specific Customer with their ID
