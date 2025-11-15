@@ -1,3 +1,9 @@
+-- Drop all tables if they exist (in correct dependency order)
+DROP TABLE IF EXISTS Loans;
+DROP TABLE IF EXISTS Books;
+DROP TABLE IF EXISTS Author;
+DROP TABLE IF EXISTS Customers;
+
 -- Create Customers table
 CREATE TABLE IF NOT EXISTS Customers(
     CustomerID SERIAL PRIMARY KEY,
