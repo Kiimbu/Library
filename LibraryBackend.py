@@ -31,10 +31,15 @@ def Show_All_Loans():
     for i in loans:
         print(i)    
 
-
 #Shows the infos of a Customer on the basis of the CustomerID
-def Show_Specific_Customer(customerID):
+def Show_Specific_Customer_ID(customerID):
     cur.execute(f"SELECT * FROM Customers WHERE CustomerID = {customerID}")
+    customer = cur.fetchall()
+    for i in customer:
+        print(i)
+
+def Show_Specific_Customer_Name(Firstname):
+    cur.execute(f"SELECT * FROM Customers WHERE Firstname = {Firstname}")
     customer = cur.fetchall()
     for i in customer:
         print(i)
